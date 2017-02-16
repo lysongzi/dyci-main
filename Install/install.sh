@@ -4,6 +4,7 @@
 _V=0
 _SKIP_CLANG_PROXY=0
 
+# getopts 可以获取执行脚本是传入的各种选项参数
 while getopts "vs" OPTION
 do
   case $OPTION in
@@ -156,6 +157,8 @@ echo -n "== Installing Xcode DYCI plugin : "
 if [[ ! -d "${USER_HOME}/Library/Application Support/Developer/Shared/Xcode/Plug-ins" ]]; then
     mkdir -p "${USER_HOME}/Library/Application Support/Developer/Shared/Xcode/Plug-ins"
 fi
+
+# mktemp 建立暂存文件
 XCODE_PLUGIN_TEMP_DIR=`mktemp -d -t dyci`
 echo
 pushd ${XCODE_PLUGIN_TEMP_DIR} > /dev/null
