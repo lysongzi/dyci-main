@@ -40,7 +40,7 @@
 		E408683516469AC10002D2ED /* SFUIViewMacroses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUIViewMacroses.h; sourceTree = "<group>"; };
 		E408683616469AC10002D2ED /* UIView+SFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SFAdditions.h"; sourceTree = "<group>"; };
 		E408683716469AC10002D2ED /* UIView+SFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SFAdditions.m"; sourceTree = "<group>"; };
-		E40921011650323600C08202 /* libdyci.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libdyci.a; path = "../dyci/build/Release-iphoneos/libdyci.a"; sourceTree = "<group>"; };
+		E40921011650323600C08202 /* libdyci.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdyci.a; path = "../dyci/build/Release-iphoneos/libdyci.a"; sourceTree = "<group>"; };
 		EEDBE397C533FEA0A9DCB8E7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -170,6 +170,12 @@
 				CLASSPREFIX = DC;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Stanfy;
+				TargetAttributes = {
+					E40867FC164699E30002D2ED = {
+						DevelopmentTeam = R5G98FQWCS;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = E40867F7164699E30002D2ED /* Build configuration list for PBXProject "dyci-example" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -270,14 +276,21 @@
 		E408681C164699E30002D2ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: lysongzi@163.com (K87F4QG564)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: lysongzi@163.com (K87F4QG564)";
+				DEVELOPMENT_TEAM = R5G98FQWCS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting Files/dyci-example-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/dyci-example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_GENERATE_MAP_FILE = YES;
 				OTHER_LDFLAGS = (
 					"-ldyci",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bingolin.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "49672b15-2019-4c21-8bd9-a36d68402b7e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -285,14 +298,21 @@
 		E408681D164699E30002D2ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: lysongzi@163.com (K87F4QG564)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: lysongzi@163.com (K87F4QG564)";
+				DEVELOPMENT_TEAM = R5G98FQWCS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting Files/dyci-example-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/dyci-example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_GENERATE_MAP_FILE = YES;
 				OTHER_LDFLAGS = (
 					"-ldyci",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bingolin.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "49672b15-2019-4c21-8bd9-a36d68402b7e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

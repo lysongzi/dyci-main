@@ -71,43 +71,43 @@
 
 
 
-//   //Level #1
-//   _textLabel.text =
-//    @"If all went right\n"
-//     "Then you were able to see small green dot\n"
-//     "And this means that you can see this text\n"
-//     "In your Iphone Simulator!\n"
-//     "If not.. than make sure that you\n"
-//     "Correctly installed DYCI\n"
-//     "\n"
-//     "Move to level #2";
-//   [_textLabel sizeToFit];
-//   _textLabel.width = textLabelWidth;
-//   _textLabel.center = self.view.center;
+   //Level #1
+   _textLabel.text =
+    @"If all went right\n"
+     "Then you were able to see small green dot\n"
+     "And this means that you can see this text\n"
+     "In your Iphone Simulator!\n"
+     "If not.. than make sure that you\n"
+     "Correctly installed DYCI\n"
+     "\n"
+     "Move to level #2";
+   [_textLabel sizeToFit];
+   _textLabel.width = textLabelWidth;
+   _textLabel.center = self.view.center;
 
 
-//   // Level #2
-//   _textLabel.text =
-//    @"Level #2\n"
-//     "You can add any code you want\n"
-//     "All methods will be updated immediately\n"
-//     "If you didn't uncommented webview delegate methods\n"
-//     "Uncomment them and Inject your code again\n"
-//     "\n"
-//     "Move to level #3";
-//   [_textLabel sizeToFit];
-//   _textLabel.width = textLabelWidth;
-//   _textLabel.center = self.view.center;
-//
-//   UIWebView * webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 200)];
-//   webView.delegate = self;
-//   webView.alpha = 0.5;
-//   [webView loadRequest:[NSURLRequest requestWithURL:[[NSURL alloc] initWithString:@"http://dyci.github.com/dyci-main/"]]];
-//   webView.scalesPageToFit = YES;
-//   [[self view] addSubview:webView];
+   // Level #2
+   _textLabel.text =
+    @"Level #2\n"
+     "You can add any code you want\n"
+     "All methods will be updated immediately\n"
+     "If you didn't uncommented webview delegate methods\n"
+     "Uncomment them and Inject your code again\n"
+     "\n"
+     "Move to level #3";
+   [_textLabel sizeToFit];
+   _textLabel.width = textLabelWidth;
+   _textLabel.center = self.view.center;
+
+   UIWebView * webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 200)];
+   webView.delegate = self;
+   webView.alpha = 0.5;
+   [webView loadRequest:[NSURLRequest requestWithURL:[[NSURL alloc] initWithString:@"http://dyci.github.com/dyci-main/"]]];
+   webView.scalesPageToFit = YES;
+   [[self view] addSubview:webView];
 
 
-//   // Level #3
+   // Level #3
 //   _textLabel.text =
 //    @"Level #3\n"
 //     "There's one thing you need to know\n"
